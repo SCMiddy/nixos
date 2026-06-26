@@ -79,6 +79,9 @@
       LC_TIME = "en_AU.UTF-8";
     };
 
+    # Enable Automounting
+    services.udisks2.enable = true;
+
     # Enable the X11 windowing system.
     services.xserver.enable = true;
 
