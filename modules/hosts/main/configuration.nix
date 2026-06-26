@@ -158,6 +158,8 @@
 
       git
       lazygit
+
+      discord
     #  wget
     ];
 
