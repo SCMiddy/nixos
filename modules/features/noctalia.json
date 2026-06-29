@@ -273,7 +273,7 @@
           "Del"
         ]
       },
-      "reverseScroll": false,
+      "reverseScroll": true,
       "smoothScrollEnabled": true
     },
     "ui": {
