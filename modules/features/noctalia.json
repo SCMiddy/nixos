@@ -32,6 +32,7 @@
         "left": [
           {
             "colorizeSystemIcon": "none",
+            "colorizeSystemText": "none",
             "customIconPath": "",
             "enableColorization": false,
             "icon": "rocket",
@@ -47,6 +48,15 @@
             "id": "Clock",
             "tooltipFormat": "HH:mm ddd, MMM dd",
             "useCustomFont": false
+          },
+          {
+            "deviceNativePath": "__default__",
+            "displayMode": "graphic",
+            "hideIfIdle": false,
+            "hideIfNotDetected": true,
+            "id": "Battery",
+            "showNoctaliaPerformance": false,
+            "showPowerProfiles": true
           },
           {
             "compactMode": true,
@@ -123,6 +133,18 @@
         ],
         "right": [
           {
+            "defaultSettings": {
+              "autoMount": false,
+              "fileBrowser": "yazi",
+              "hideWhenEmpty": false,
+              "iconColor": "none",
+              "showBadge": false,
+              "showNotifications": true,
+              "terminalCommand": "kitty"
+            },
+            "id": "plugin:usb-drive-manager"
+          },
+          {
             "blacklist": [],
             "chevronColor": "none",
             "colorizeIcons": false,
@@ -165,6 +187,7 @@
           {
             "colorizeDistroLogo": false,
             "colorizeSystemIcon": "none",
+            "colorizeSystemText": "none",
             "customIconPath": "",
             "enableColorization": false,
             "icon": "noctalia",
@@ -725,40 +748,39 @@
     "openedPanel": "",
     "lockScreenActive": false,
     "wallpapers": {
-      "eDP-1": "/home/robing/Pictures/Wallpapers/20241221_160706.jpg",
-      "HDMI-A-2": "/home/robing/Pictures/Wallpapers/20241221_160706.jpg"
+      "eDP-1": "/home/robing/Pictures/Wallpapers/20241221_160706.jpg"
     },
     "desktopWidgetsEditMode": false,
     "display": {
       "HDMI-A-2": {
-        "name": "HDMI-A-2",
         "connected": true,
-        "scale": 1,
-        "width": 1920,
         "height": 1200,
-        "x": 1920,
-        "y": 0,
-        "physical_width": 520,
+        "name": "HDMI-A-2",
         "physical_height": 320,
+        "physical_width": 520,
         "refresh_rate": 59950,
-        "vrr_supported": false,
+        "scale": 1,
+        "transform": "Normal",
         "vrr_enabled": false,
-        "transform": "Normal"
+        "vrr_supported": false,
+        "width": 1920,
+        "x": 1920,
+        "y": 0
       },
       "eDP-1": {
-        "name": "eDP-1",
         "connected": true,
-        "scale": 1,
-        "width": 1920,
         "height": 1080,
-        "x": 0,
-        "y": 0,
-        "physical_width": 340,
+        "name": "eDP-1",
         "physical_height": 190,
+        "physical_width": 340,
         "refresh_rate": 144149,
-        "vrr_supported": true,
+        "scale": 1,
+        "transform": "Normal",
         "vrr_enabled": false,
-        "transform": "Normal"
+        "vrr_supported": true,
+        "width": 1920,
+        "x": 0,
+        "y": 0
       }
     },
     "notificationsState": {
