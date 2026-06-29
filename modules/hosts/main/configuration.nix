@@ -82,6 +82,10 @@
     # Enable Automounting
     services.udisks2.enable = true;
 
+    # Enable Upower
+    services.upower.enable = true;
+
+
     # Enable the X11 windowing system.
     services.xserver.enable = true;
 
