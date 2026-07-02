@@ -14,6 +14,7 @@
 
       self.nixosModules.niri
       self.nixosModules.gtk
+      self.nixosModules.gaming
 #      self.nixosModules.kitty
     ];
 
@@ -30,11 +31,10 @@
     # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
     # note check Troubleshooting section of nixos.org wiki NVIDIA section for solution to suspend issue with gnome
+
     # Condsider moving to diff file
-    hardware.graphics.enable = true;
     services.xserver.videoDrivers = [  "nvidia" ];
 
-    programs.gamemode.enable = true;
 
     hardware.nvidia.open = true;
     hardware.nvidia.modesetting.enable = true;
@@ -134,8 +134,6 @@
     # Install firefox.
     programs.firefox.enable = true;
     
-    programs.steam.enable = true;
-
     programs.git = {
       enable = true;
       config.user = {
@@ -157,7 +155,6 @@
       foot
       yazi
       spotify
-      prismlauncher
 
       reaper
   
