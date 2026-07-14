@@ -12,6 +12,8 @@
         font_size = 15;
         font_family = "JetBrainsMono Nerd Font";
 
+        themeFile = "Catpuccin-Macchiato";
+
         cursor_text_color = "background";
 
         allow_remote_control = "yes";
