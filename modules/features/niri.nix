@@ -9,9 +9,12 @@
   perSystem = { pkgs, lib, self', ... }: {
     packages.myNiri = inputs.wrapper-modules.wrappers.niri.wrap {
       inherit pkgs;
-      settings = {
+      settings = let 
+        noct = lib.getExe self'.packages.myNoctalia;
+        terminal = lib.getExe self'.packages.mykTerm;
+      in {
         spawn-at-startup = [
-          (lib.getExe self'.packages.myNoctalia)
+          noct;
         ];
 
         xwayland-satellite.path = lib.getExe pkgs.xwayland-satellite;
@@ -42,9 +45,9 @@
         };
 
         binds = {
-          "Mod+Return".spawn-sh = "${lib.getExe self'.packages.mykTerm}";
-          "Mod+Space".spawn-sh = "${lib.getExe self'.packages.myNoctalia} ipc call launcher toggle";
-          "Mod+L".spawn-sh = "${lib.getExe self'.packages.myNoctalia} ipc call lockScreen lock";
+          "Mod+Return".spawn-sh = "${terminal}";
+          "Mod+Space".spawn-sh = "${noct} ipc call launcher toggle";
+          "Mod+L".spawn-sh = "${noct} ipc call lockScreen lock";
 
           "Mod+Q".close-window = _: {};
           "Mod+F".maximize-column = _: {};
