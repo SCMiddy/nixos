@@ -14,7 +14,7 @@
         terminal = lib.getExe self'.packages.mykTerm;
       in {
         spawn-at-startup = [
-          noct;
+          noct
         ];
 
         xwayland-satellite.path = lib.getExe pkgs.xwayland-satellite;

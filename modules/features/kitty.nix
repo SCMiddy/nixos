@@ -38,34 +38,34 @@
           "ctrl+shift+t new_tab"
         ];
 
-        background = self.theme.base00;
-        foreground = self.theme.base07;
+        background = "#242424";
+        foreground = "#fbf1c7";
 
-        cursor = self.theme.base07;
+        cursor = "#fbf1c7";
 
-        selection_foreground = self.theme.base02;
-        selection_background = self.theme.base01;
+        selection_foreground = "#504945"; 
+        selection_background = "#3c3836";
 
-        active_tab_foreground = self.theme.base0B;
-        active_tab_background = self.theme.base03;
-        inactive_tab_background = self.theme.base01;
+        active_tab_foreground = "#b8bb26";
+        active_tab_background = "#665c54";
+        inactive_tab_background = "#3c3836";
 
-        color0 = self.theme.base00;
-        color8 = self.theme.base02;
-        color1 = self.theme.base08;
-        color9 = self.theme.base08;
-        color2 = self.theme.base0B;
-        color10 = self.theme.base0B;
-        color3 = self.theme.base0A;
-        color11 = self.theme.base0A;
-        color4 = self.theme.base0D;
-        color12 = self.theme.base0D;
-        color5 = self.theme.base0E;
-        color13 = self.theme.base0E;
-        color6 = self.theme.base0C;
-        color14 = self.theme.base0C;
-        color7 = self.theme.base03;
-        color15 = self.theme.base03;
+        color0 = "#242424"; #bg
+        color8 = "#504945";
+        color1 = "#fb4934"; # red
+        color9 = "#fb4934"; # red
+        color2 = "#b8bb26"; # green
+        color10 = "#b8bb26"; # green
+        color3 = "#fabd2f"; # yellow
+        color11 = "#fabd2f"; # yellow
+        color4 = "#7daea3"; # blue
+        color12 = "#7daea3"; # blue
+        color5 = "#e089a1"; # magenta
+        color13 = "#e089a1"; # magenta
+        color6 = "#8ec07c"; # cyan
+        color14 = "#8ec07c"; # cyan
+        color7 = "#665c54";
+        color15 = "#665c54";
       };
     };
   };
