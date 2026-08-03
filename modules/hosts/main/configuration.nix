@@ -15,6 +15,7 @@
       self.nixosModules.niri
       self.nixosModules.gtk
       self.nixosModules.gaming
+      self.nixosModules.powersave
 #      self.nixosModules.kitty
     ];
 
