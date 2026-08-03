@@ -156,7 +156,9 @@
       yazi
       spotify
 
+      # create reaper module i reckon
       reaper
+      alsa-utils
   
       bibata-cursors
 
