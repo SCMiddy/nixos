@@ -144,6 +144,9 @@
     };
 
 
+    # for metr202
+    virtualisation.virtualbox.host.enable = true;
+
     # Allow unfree packages
     nixpkgs.config.allowUnfree = true;
 
